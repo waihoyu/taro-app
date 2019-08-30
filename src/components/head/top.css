@@ -1,0 +1,10 @@
+.top {
+  background: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.top .img {
+  width: 28px;
+  height: 28px;
+}
