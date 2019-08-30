@@ -1,9 +1,9 @@
 import Taro ,{Component} from '@tarojs/taro'
-import View from '@tarojs/components'
+import {View, Text, Image}  from '@tarojs/components'
 import './top.less'
 
-class Top extends Component{
-    render(){
+class Top extends Component {
+    render() {
         return (
                 <View className = "top">
                     <View className="left">
@@ -13,10 +13,8 @@ class Top extends Component{
                         <Image className="img" src={require("../../assets/img/search.png")}></Image>
                         <Image className="img" src={require("../../assets/img/colletion.png")}></Image>
                         <Image className="img" src={require("../../assets/img/tuan.png")}></Image>
-                        <Image className="img" src={require("../../assets/img/dian.png")}></Image>
-                        
-                    </View> 
-                   
+                        <Image className="img" src={require("../../assets/img/dian.png")}></Image>                    
+                    </View>                  
                 </View>    
         )  
     }
