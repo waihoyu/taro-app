@@ -1,6 +1,7 @@
 import Taro ,{Component} from '@tarojs/taro'
 import {View, Text, Image} from '@tarojs/components'
 import Top from './top'
+import Activity from './activity'
 import './head.less'
 
 class Head extends Component{
@@ -23,7 +24,7 @@ class Head extends Component{
                 <View className="store">
                     <Image className="store_img" src={require('../../assets/img/store.jpg')}></Image>
                     <View className="store_text">
-                        <Text>
+                        <Text className="title"> 
                             {store.title}
                         </Text>
                         <Text>
@@ -36,6 +37,7 @@ class Head extends Component{
                         </View>                                                
                     </View>
                 </View>
+                <Activity></Activity>
             </View>
         )
     }
