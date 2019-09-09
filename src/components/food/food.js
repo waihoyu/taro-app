@@ -8,21 +8,29 @@
 import Taro, {Component} from '@tarojs/taro'         
 import {View, Text, Image} from '@tarojs/components' 
 import {AtTabs, AtTabsPane} from 'taro-ui'
+import Cata from './cata'
+import 'taro-ui/dist/style/components/tabs.scss'
 
 class Food  extends Component {                
    constructor(){                                    
        super(...arguments)                           
-       this.state = { }                              
-    }                                                   
-   render(){                                         
+       this.state = { 
+           current: 0,
+           tabList: [{title: "点菜"}, {title: "评价"}, {title: "商家"}]
+       }                              
+    }   
+    changeTab(value){
+        this.setState({current: value})
+    }                                                
+   render(){    
+       let {current, tabList} = this.state                                     
        return (
             <View>
-                <AtTabs tabs={
-                    [
-                        {title:"标签1"},
-                        {title:"标签1"},
-                        {title:"标签1"}
-                    ]}></AtTabs>
+                <AtTabs current={current} onClick={this.changeTab.bind(this)} tabList={tabList}>
+                <AtTabsPane>Cata</AtTabsPane>
+                <AtTabsPane>评价</AtTabsPane>
+                <AtTabsPane>商家</AtTabsPane>
+                </AtTabs>
             </View>
        )                
    }                                                 

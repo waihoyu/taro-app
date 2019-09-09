@@ -4,7 +4,7 @@ import './index.less'
 import Head from '../../components/head/head.js'
 import top from '../../components/head/top'
 import Food from '../../components/food/food'
-
+import Test from '../../components/food/test'
 export default class Index extends Component {
 
   config = {
@@ -25,7 +25,8 @@ export default class Index extends Component {
     return (
       <View className='index'>
         <Head/>
-        <Food></Food>
+        {/* <Food></Food> */}
+        <Test></Test>
       </View>
     )
   }
