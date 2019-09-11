@@ -26,7 +26,6 @@ export default class Index extends Component {
       <View className='index'>
         <Head/>
         <Food></Food>
-        {/* <Test></Test> */}
       </View>
     )
   }
