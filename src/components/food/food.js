@@ -10,6 +10,7 @@ import {View, Text, Image} from '@tarojs/components'
 import {AtTabs, AtTabsPane} from 'taro-ui'
 import Cata from './cata'
 import 'taro-ui/dist/style/components/tabs.scss'
+import './food.less'
 
 class Food  extends Component {                
    constructor(){                                    
@@ -27,9 +28,11 @@ class Food  extends Component {
        return (
             <View>
                 <AtTabs current={current} onClick={this.changeTab.bind(this)} tabList={tabList}>
-                <AtTabsPane>Cata</AtTabsPane>
-                <AtTabsPane>评价</AtTabsPane>
-                <AtTabsPane>商家</AtTabsPane>
+                    <AtTabsPane>
+                        <Cata></Cata>
+                    </AtTabsPane>
+                    <AtTabsPane>评价</AtTabsPane>
+                    <AtTabsPane>商家</AtTabsPane>
                 </AtTabs>
             </View>
        )                
