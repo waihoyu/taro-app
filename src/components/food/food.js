@@ -28,7 +28,6 @@ class Food  extends Component {
         this.setState({current: value})
     }
     changeCata(selectCata){
-        // console.log(selectCata)
         this.setState({selectCata: selectCata});
         if(this.state.foodList.some(item=>item.pid==selectCata.id)){
             this.setState({
@@ -49,11 +48,11 @@ class Food  extends Component {
         let imgurl = `../../assets/img/${count}.jpg`
         return  Array.from(Array(Math.round(Math.random()*20)),(v,k)=>({
             price: Math.round(Math.random()*20),
-            sole: Math.round(Math.random()*50),
-            img: imgurl,
-            pid: selectCata.id, 
-            id: selectCata.id + "_" + k,
-            title:"分类" + selectCata.id + "菜品" + k + 1
+            sole:  Math.round(Math.random()*50),
+            img:   imgurl,
+            pid:   selectCata.id, 
+            id:    selectCata.id + "_" + k,
+            title: "分类" + selectCata.id + "菜品" + k + 1
         }))       
     }                                               
    render(){    

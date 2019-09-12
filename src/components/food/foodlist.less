@@ -6,11 +6,18 @@
 
 .foodlist{
     padding: 10PX;
+    flex-grow: 1;
+    .foodlist_cata{
+        background: red;
+    }
    .foodlist_item{
        margin-top: 15PX;
        display: flex;
        flex-direction: row;
+       flex-grow: 1;
        .foodlist_item_info{
+           flex-grow: 1;
+           position: relative;
            display: flex;
            flex-direction: column;
            font-size: 14PX;
@@ -18,8 +25,7 @@
            height: 80PX;
            justify-content: space-between;
            .price{
-               color:red;
-               
+               color:red;              
            }
         }
        .foodlist_item_img{
