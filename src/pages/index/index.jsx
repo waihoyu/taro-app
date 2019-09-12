@@ -4,7 +4,8 @@ import './index.less'
 import Head from '../../components/head/head.js'
 import top from '../../components/head/top'
 import Food from '../../components/food/food'
-import Test from '../../components/food/test'
+import Bottom from '../../components/bottom/bottom'
+
 export default class Index extends Component {
 
   config = {
@@ -23,10 +24,11 @@ export default class Index extends Component {
 
   render () {
     return (
-      <View className='index'>
-        <Head/>
-        <Food></Food>
-      </View>
+            <View className='index'>
+                <Head />
+                <Food />
+                <Bottom />
+            </View>
     )
   }
 }
