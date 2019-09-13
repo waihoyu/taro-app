@@ -9,7 +9,7 @@ class Head extends Component{
         super(...arguments);
         this.state = {
                 store: {
-                    title: "川香居",
+                    title: "老李家炒菜馆",
                     notice: "欢迎光临,很高兴为您服务~",
                     tags: ["味道赞", "主食真好", "分量足"]
                 }

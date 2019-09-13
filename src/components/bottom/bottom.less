@@ -8,17 +8,17 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    bottom: 10PX;
+    bottom: 1PX;
     left: 0;
     height: 60PX;
     .bottom_body{
-        padding: 0 15PX;
+        padding: 0 30PX;
         height: 60PX;
         display: flex;
         flex-direction: row;
         font-size: 14PX;
         justify-content: space-between;
-        width: 90%;
+        width: 92%;
         padding: 0 10PX;
         border-radius: 50PX;
         background: #3A3B36;
@@ -39,8 +39,11 @@
         .store_img{
             width: 60PX;
             height: 60PX;
-            margin-top: -20PX;
-            margin-left: 20PX;
+            margin-top: -15PX;
+            margin-left: 15PX;
+            z-index: 1;
+            background: #F1F1C9;
+            border-radius: 10PX;
         }
         .info{
             height: 60PX;
@@ -49,6 +52,26 @@
         .submit{
             height: 60PX;
             line-height: 60PX;
+            font-weight: bold;
+            font-size: 16PX;            
+        }
+        .price{
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 16PX;
+            margin-left: -37PX;
+        }
+        .goPay{
+           display: block;
+           background-color: #f4ea2a;
+           color: black;
+           font-size: 16PX;
+           height: 100%;
+           width: 100PX;
+           text-align: center;
+           margin-right: -10PX;
+           border-radius: 0 45PX 45PX 0px;
+
         }
     }
 
